@@ -18,6 +18,7 @@ public class WriteForm extends javax.swing.JFrame {
     private final String TEXT = "text";
     private final String WIDS = "width";
     private final String HITE = "height";
+    private final String ORIENTION = "oriention";
 
     /**
      * Creates new form WriteForm
@@ -27,6 +28,27 @@ public class WriteForm extends javax.swing.JFrame {
         f = new FileIO();
         loadText();
         loadFormSize();
+        loadTextOriention();
+    }
+
+    private void loadTextOriention() {
+        String align = f.getProperty(ORIENTION);
+        try {
+            switch (align) {
+                case "rtl":
+                    textArea.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
+                    break;
+                case "ltr":
+                    textArea.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
+                    break;
+                default:
+                    textArea.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
+                    break;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            textArea.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
+        }
     }
 
     private void loadText() {
@@ -40,7 +62,7 @@ public class WriteForm extends javax.swing.JFrame {
         }catch(Exception e){
             e.printStackTrace();
         }
-        
+
     }
 
     private void loadFormSize() {
@@ -59,6 +81,13 @@ public class WriteForm extends javax.swing.JFrame {
         //save font size too :)
         Font font = textArea.getFont();
         f.setProperty("fontSize", String.valueOf(font.getSize()));
+        if(textArea.getComponentOrientation() == ComponentOrientation.RIGHT_TO_LEFT){
+            f.setProperty(ORIENTION, "rtl");
+        }
+        else{
+            f.setProperty(ORIENTION, "ltr");
+        }
+        
     }
 
     /**
@@ -197,11 +226,11 @@ public class WriteForm extends javax.swing.JFrame {
     }//GEN-LAST:event_zoomoutMouseClicked
 
     private void ltrbtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ltrbtnMouseClicked
-        
+
     }//GEN-LAST:event_ltrbtnMouseClicked
 
     private void rtlbtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rtlbtnMouseClicked
-        
+
     }//GEN-LAST:event_rtlbtnMouseClicked
 
     private void ltrbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ltrbtnActionPerformed
@@ -221,7 +250,7 @@ public class WriteForm extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
