@@ -92,7 +92,7 @@ public class WriteForm extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(textArea);
 
-        zoomin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/stickynote/+.png"))); // NOI18N
+        zoomin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/stickynote/icons/+.png"))); // NOI18N
         zoomin.setToolTipText("Zoom in");
         zoomin.setBorder(new RoundedBorder(5));
         zoomin.setFocusPainted(false);
@@ -103,7 +103,7 @@ public class WriteForm extends javax.swing.JFrame {
             }
         });
 
-        zoomout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/stickynote/-.png"))); // NOI18N
+        zoomout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/stickynote/icons/-.png"))); // NOI18N
         zoomout.setToolTipText("Zoom out");
         zoomout.setBorder(new RoundedBorder(5));
         zoomout.setFocusPainted(false);
@@ -114,7 +114,7 @@ public class WriteForm extends javax.swing.JFrame {
             }
         });
 
-        ltrbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/stickynote/ltr.png"))); // NOI18N
+        ltrbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/stickynote/icons/ltr.png"))); // NOI18N
         ltrbtn.setToolTipText("Left to right");
         ltrbtn.setBorder(new RoundedBorder(5));
         ltrbtn.setFocusPainted(false);
@@ -130,7 +130,7 @@ public class WriteForm extends javax.swing.JFrame {
             }
         });
 
-        rtlbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/stickynote/rtl.png"))); // NOI18N
+        rtlbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/stickynote/icons/rtl.png"))); // NOI18N
         rtlbtn.setToolTipText("Right to left");
         rtlbtn.setBorder(new RoundedBorder(5));
         rtlbtn.setFocusPainted(false);
@@ -169,7 +169,7 @@ public class WriteForm extends javax.swing.JFrame {
                     .addComponent(ltrbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(rtlbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 247, Short.MAX_VALUE))
         );
 
         pack();
