@@ -1,7 +1,7 @@
 # SimpleStickyNote
 Simple Sticky Note, **Powerful** sticky note for Linux. it's cross-platform.
 - Supports Persian and RTL languages
-- Save notes as you type. No concern of missing notes.
+- Save notes as you type. No concern of missing a character :)
 - Change font size easily.
 <br>
 -- For better experience, install "Mikhak.ttf" included in the package.
