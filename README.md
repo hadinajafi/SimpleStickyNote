@@ -4,7 +4,7 @@ Simple Sticky Note, **Powerful** sticky note for Linux. it's cross-platform.
 - Save notes as you type. No concern of missing a character :)
 - Change font size easily.
 <br>
--- For better experience, install "Mikhak.ttf" included in the package.
+-- For better experience, install *Mikhak.ttf* included in the package.
 <br>
 <br>
 After download, put the .jar file to your preffered folder, and enable its execution permission. Then in startup applications add this command:
