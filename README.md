@@ -9,4 +9,4 @@ Simple Sticky Note, **Powerful** sticky note for Linux. it's cross-platform.
 <br>
 After download, put the .jar file to your preffered folder, and enable its execution permission. Then in startup applications add this command:
 
-```java -jar /home/USER/PATH/TO/JAR/StickyNote v1.0.jar```
+```java -jar /home/USER/PATH/TO/JAR/StickyNote.jar```
